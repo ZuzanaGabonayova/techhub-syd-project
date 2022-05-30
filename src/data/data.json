@@ -1,0 +1,57 @@
+{
+    "partners":{
+        "partnersList": [
+            {
+                "name": "business esbjerg",
+                "image": "business-esbjerg.png"
+            },
+            {
+                "name": "business academy southwest",
+                "image": "easv.png"
+            },
+            {
+                "name": "esbjerg aalborg university ",
+                "image": "esbjerg-aalborg-university.png"
+            },
+            {
+                "name": "innovationsfonden",
+                "image": "innovationsfonden.png"
+            },
+            {
+                "name": "deloitte",
+                "image": "deloitte.png"
+            },
+            {
+                "name": "vaekstfonden",
+                "image": "vaekstfonden.png"
+            },
+            {
+                "name": "E. Bank Lauridsen Holding A/S",
+                "image": "lauridsen-holding-white.png"
+            },
+            {
+                "name": "A. Thomsen Holding ApS ",
+                "image": "thomsen-holding.png"
+            }
+        ]
+    },
+
+    "references":{
+        "referencesList": [
+            {
+                "message": "As a tech entrepreneur searching for the brightest minds to grow your team and to get inspiration and investor know-how, this setup comes in handy. Looking forward to join the movement.",
+                "name": "Arek Zakonek",
+                "position": "Founder / CEO",
+                "company": "Cocolab ApS",
+                "web": "http://www.cocolab.club"
+            },
+            {
+                "message": "I owe the community a BIG thank you as the first event really kick-started my own business with a lot of contacts and positive inspiration. Have been really busy since we met at the Inspirational Talk #1 🙂",
+                "name": "Thomas Andersen",
+                "position": "Founder / CEO",
+                "company": "BitMind",
+                "web": ""
+            }
+        ]
+    }
+}
