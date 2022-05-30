@@ -1,0 +1,62 @@
+nav{
+    background-color: none;
+    height: 80px;
+    font-family: $body-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+
+    .navbar-brand{
+        max-height: 70px;
+        width: auto;
+        height: 70px;
+        margin-left: 2rem;
+
+        img{
+            max-height: 4rem;
+        }
+    }
+
+    ul{
+        margin-right: 2rem;
+        gap: 15px;
+
+        li{
+
+            a{
+                color: $primary-text-color;
+                text-decoration: none;
+
+                &:hover{
+                    color: $middle-neon;
+                }
+            }
+
+            .sign-up{
+                color: $light-neon-green;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 990px){
+    nav{
+        height: auto;
+        background-color: $dark-purple;
+
+        .navbar-brand{
+            margin-left: 0rem;
+        }
+
+        /* .navbar-toggler{
+            border: 1px solid $light-neon-green;
+        }
+ */
+        ul{
+            margin-right: 0rem;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+}
