@@ -1,0 +1,168 @@
+#references{
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+    background-color: $primary-background-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .references{
+        margin-left: 8rem;
+        margin-right: 8rem;
+
+        .references-heading{
+            height: fit-content;
+            
+            .references-heading-text{
+                align-items: center;
+                display: flex;
+
+                h2{
+                    color: $light-neon-green;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                    font-size: 3.2rem;
+                }
+            }
+
+            .references-heading-img{
+                justify-content: center;
+                display: flex;
+                margin-top: 4rem;
+            
+
+                img{
+                    height: 170px;
+                    width: auto;
+                }
+            }
+        }
+
+        .references-message{
+            height: fit-content;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            .references-messagess{
+
+                &:nth-child(even){
+                    margin-top: 4rem;
+                    padding-left: 3rem;
+                }
+                &:nth-child(odd){
+                    margin-top: -2rem;
+                    padding-right: 3rem;
+                }
+
+                .message{
+
+                    p{
+                        color: $primary-text-color;
+                        font-size: $font-paragraphs;
+                    }
+                }
+
+                .pplinfo{
+
+                    p{
+                        color: $light-neon-green;
+                        font-size: $font-paragraphs;
+
+                        span{
+                            font-size: 1.4rem;
+                        }
+
+                        a{
+                            color: $dark-neon-green;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 990px){
+
+    #references{
+
+        .references{
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            
+
+            .references-heading{
+                display: flex;
+                flex-direction: row;
+                
+                .references-heading-text{
+
+                    h2{
+                        font-size: 2.3rem;
+                    }
+                }
+
+                .references-heading-img{
+                    margin-top: -2.5rem;
+                    justify-content: flex-end;
+                    
+
+                    img{
+                        height: 100px;
+                    }
+                }
+            }
+
+            .references-message{
+                gap: 15px;
+                padding: 0px 15px;
+                margin-top: 3rem;
+
+                .references-messagess{
+
+                    &:nth-child(even){
+                        margin: 0rem;
+                        padding: 0rem;
+                    }
+                    &:nth-child(odd){
+                        margin: 0rem;
+                        padding: 0rem;
+                    }
+
+                    .message{
+
+                        p{
+                            font-size: 1.4rem;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    .pplinfo{
+
+                        p{
+                            font-size: 1.4rem;
+
+                            span{
+                                font-size: 1.2rem;
+                            }
+
+                            a{
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
