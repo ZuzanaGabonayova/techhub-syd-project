@@ -10,7 +10,7 @@
     <ReferencesPage />
     <ContactPage />
 
-    <!-- <EventsPage /> -->
+    <EventsPage />
   </div>
 
 </template>
@@ -20,7 +20,7 @@
 import HomePage from './Vue/pages/HomePage.vue'
 import AboutPage from './Vue/pages/AboutPage.vue'
 import ReferencesPage from './Vue/pages/ReferencesPage.vue'
-/* import EventsPage from './Vue/pages/EventsPage.vue' */
+import EventsPage from './Vue/pages/EventsPage.vue'
 import ContactPage from './Vue/pages/ContactPage.vue'
 
 export default {
@@ -29,7 +29,7 @@ export default {
     HomePage,
     AboutPage,
     ReferencesPage,
-    /* EventsPage */
+    EventsPage,
     ContactPage
   }
 }
