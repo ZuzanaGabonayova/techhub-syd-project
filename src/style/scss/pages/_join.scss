@@ -1,54 +1,252 @@
+#join{
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+    background-color: $primary-background-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-p{
- font-size: 30px;
- padding: 10px;
- font-weight: bold;
+    .join{
+        margin-left: 8rem;
+        margin-right: 8rem;
+
+        .join-all{
+            background-image: linear-gradient(to bottom, $dark-purple, $primary-background-color);
+            height: fit-content;
+            min-height: 70vh;
+            border-radius: 8rem;
+            
+
+            .join-heading{
+                margin-top: 4rem;
+                
+                h3{
+                    color: $light-neon-green;
+                    font-weight: bold;
+                    font-size: $font-headings;
+                    text-align: center;
+                }
+            }
+
+            .join-components{
+                margin-top: 0rem;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                .woman-img{
+
+                    img{
+                        margin-left: -4rem;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .contact-form{
+                    border-right: 1px solid $middle-purple;
+
+                    form{
+
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            input, textarea{
+                                color: $light-purple;
+                                background-color: transparent;
+                                border-radius: 0.8rem;
+                                width: 80%;
+                                border: 1px solid $light-purple;
+
+                                &::placeholder{
+                                    padding-left: 10px;
+                                    color: $light-neon-green;
+                                }
+                            }
+
+                            input{
+                                height: 2.5rem;
+                            }
+                            textarea{
+                                height: 7rem;
+                            }
+                        }
+
+                        button{
+                            background-color: $middle-purple;
+                            color: $light-neon-green;
+                            font-weight: bold;
+                            padding: 5px 20px;
+                            border-radius: 0.8rem;
+                            border: 1px solid $light-purple;
+
+                            &:hover{
+                                background-color: $dark-purple;
+                            }
+
+                        }
+                    }
+                }
+
+                .newsletter{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    h3{
+                        color: $light-neon-green;
+                        font-size: $font-size-md;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                    form{
+
+                        div{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            input{
+                                color: $light-purple;
+                                background-color: transparent;
+                                border-radius: 0.8rem;
+                                width: 80%;
+                                border: 1px solid $light-purple;
+                                height: 2.5rem;
+
+                                &::placeholder{
+                                    padding-left: 10px;
+                                    color: $light-neon-green;
+                                }
+                            }
+                        }
+
+                        button{
+                            background-color: $middle-purple;
+                            color: $light-neon-green;
+                            font-weight: bold;
+                            padding: 5px 20px;
+                            border-radius: 0.8rem;
+                            border: 1px solid $light-purple;
+
+                            &:hover{
+                                background-color: $dark-purple;
+                            }
+                        }
+                    }
+                }
+
+                .team{
+                    display: flex;
+                    gap:15px;
+                    justify-content: center;
+                    align-items: center;
+
+                    .team-item{
+                        width: 80px;
+                        height: 80px;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 50%;
+
+                            &:hover{
+                                border: 2px solid $light-purple;
+                            }
+                        }
+                    }
+                }
+
+                .contact-icons{
+                    gap: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                   
+
+                    .social-item{
+                        
+                        a{
+                            color: $primary-text-color;
+                            text-decoration: none;
+
+                            &:hover{
+                                color: $light-purple;
+                            }
+
+                            i{
+                                font-size: 2.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-.form-container {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- margin: 50px auto;
- border-radius: 10px;
- padding: 10px;
- background-color: #ea1d6f; 
- width: 500px;
-}
 
-.form-group{
- padding: 15px;
-}
 
-.form-group input{
- padding: 10px 10px 10px 10px;
- border: none;
- border-radius: 10px;
- width: 400px;
- outline: none;
- font-family: 'Comfortaa', cursive;
- font-weight: 500;
-}
+@media only screen and (max-width: 990px){
 
-.text-area {
- height: 150px;
- width: 400px;
- border: none;
- border-radius: 10px;
- padding: 10px;
- outline: none;
- font-family: 'Comfortaa', cursive;
- font-weight: 500;
-}
+    #join{
 
-.form-group .submit{
- border: none;
- border-radius:5px;
- height: 40px;
- width: 70px ;
- cursor: pointer;
- font-family: 'Comfortaa', cursive;
- font-weight: 500;
+        .join{
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+
+            .join-all{
+                background-image: linear-gradient(to bottom, $dark-purple, $primary-background-color);
+                border-radius: 4rem;
+
+                .join-heading{
+
+                    h3{
+                        font-size: 2.3rem;
+                        text-align: left;
+                    }
+                }
+
+                .join-components{
+                    gap: 15px;
+
+                    .woman-img{
+                        margin-top: 0rem;
+
+                        img{
+                            margin-left: -3rem;
+                            height: 14rem;
+                            width: auto;
+                            margin-bottom: -13rem;
+                        }
+                    }
+
+                    .contact-form{
+                        border-right: 0px;
+                    }
+
+                    .contact-icons{
+                        flex-direction: row;
+                        padding: 20px;;
+                    }
+                }
+
+            }
+        }
+    }
 }
