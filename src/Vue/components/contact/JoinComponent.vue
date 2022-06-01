@@ -4,62 +4,105 @@
 
         <div class="container-fluid join">
 
-            <div class="row join-heading">
+            <div class="row">
 
-                <div class="col-sm-12 col-md-12 join-heading-text">
+                <div class="col-sm-12 col-md-12 join-all">
 
-                    <h2>JOIN US TO BUILD YOUR STARTUP</h2>
+                    <div class="row join-heading">
+
+                        <div class="col-sm-12 col-md-12 join-heading-text">
+
+                            <h3>JOIN US TO BUILD YOUR STARTUP</h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row join-components">
+
+                        <div class="col-sm-12 col-md-2 woman-img">
+                            <img src="../../../assets/images/illustrations/woman.png" alt="woman">
+                        </div>
+
+
+                        <div class="form-container col-sm-12 col-md-4 contact-form">
+
+                            <form class="form" ref="form" @submit.prevent="sendMail" action="">
+
+                                <div class="form-group">
+                                    <input name="from_name" placeholder="Name" type="text" :value="inputFieldReset" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input name="email" placeholder="E-mail" type="email" :value="inputFieldReset" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="text-area" name="message" placeholder="Message..." type="text" :value="inputFieldReset" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="submit" type="submit" name="send">SEND A MESSAGE</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+
+                        <div class="form-container col-sm-12 col-md-4 newsletter">
+
+                            <h3>Keep up with today's top tech news and sign up to our NEWSLETTER!</h3>
+
+                            <form class="newsletter" ref="form" @submit.prevent="sendMail2" action="">
+
+                                <div class="form-group">
+                                    <input name="email" placeholder="E-mail" type="email" :value="inputFieldReset" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="submit" type="submit" name="send">SUBSCRIBE</button>
+                                </div>
+
+                            </form>
+
+                            <div class="team">
+                                <div class="team-item">
+                                    <a href="https://www.linkedin.com/in/kasperthom/" alt="linkedin kasper" target="_blank">
+                                        <img src="../../../assets/images/team/kasper.jpg" alt="kasper">
+                                    </a>
+                                </div>
+                                <div class="team-item">
+                                    <a href="https://www.linkedin.com/in/trinefalbe/" alt="linkedin trine" target="_blank">
+                                        <img src="../../../assets/images/team/trine.jpg" alt="trine">
+                                    </a>
+                                </div>
+                                <div class="team-item">
+                                    <a href="https://www.linkedin.com/in/ronni-baslund/" alt="linkedin ronni" target="_blank">
+                                        <img src="../../../assets/images/team/ronni.jpg" alt="ronni">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-2 contact-icons">
+
+                            <div class="social-item">
+                                <a href="https://www.linkedin.com/company/techhub-syd/" alt="linkedin" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="https://www.facebook.com/" alt="facebook" target="_blank">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
 
                 </div>
-
-            </div>
-
-
-            <div class="row join-forms">
-
-                <div class="form-container col-sm-12 col-md-6">
-
-                    <form class="form" ref="form" @submit.prevent="sendMail" action="">
-
-                        <div class="form-group mb-3 d-flex flex-column align-items-start">
-                            <label for="nameInput" class="form-label">Name</label>
-                            <input name="from_name" placeholder="Name" type="text" :value="inputFieldReset" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="emailInput" class="form-label">E-mail</label>
-                            <input name="email" placeholder="E-mail" type="email" :value="inputFieldReset" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="messageInput" class="form-label">Message</label>
-                            <textarea class="text-area" name="message" placeholder="Message..." type="text" :value="inputFieldReset" required></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <button class="submit" type="submit" name="send">SUBSCRIBE</button>
-                        </div>
-
-                    </form>
-                </div>
-
-
-                <div class="form-container col-sm-12 col-md-6 newsletter">
-
-                    <form class="newsletter" ref="form" @submit.prevent="sendMail2" action="">
-
-                        <div class="form-group">
-                            <label for="emailInput" class="form-label">E-mail</label>
-                            <input name="email" placeholder="e-mail" type="email" :value="inputFieldReset" required>
-                        </div>
-
-                        <div class="form-group">
-                            <button class="submit" type="submit" name="send">SUBSCRIBE</button>
-                        </div>
-
-                    </form>
-                </div>
-
             </div>
 
 
