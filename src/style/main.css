@@ -26,6 +26,11 @@ nav {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
+  background-image: -webkit-gradient(linear, right top, left top, from(#000000), to(#4801A7));
+  background-image: linear-gradient(to left, #000000, #4801A7);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 nav .navbar-brand {
@@ -60,7 +65,6 @@ nav ul li .sign-up {
 @media only screen and (max-width: 990px) {
   nav {
     height: auto;
-    background-color: #4801A7;
     /* .navbar-toggler{
             border: 1px solid $light-neon-green;
         }
@@ -1368,6 +1372,13 @@ footer .copyright p {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
+}
+
+#join .join .join-all .join-components .newsletter p {
+  color: #B3A2FE;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: -1rem;
 }
 
 #join .join .join-all .join-components .newsletter form div {

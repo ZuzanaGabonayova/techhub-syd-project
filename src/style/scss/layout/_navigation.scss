@@ -6,6 +6,11 @@ nav{
     font-weight: bold;
     font-size: 1rem;
 
+    background-image: linear-gradient(to left, $primary-background-color, $dark-purple);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
     .navbar-brand{
         max-height: 70px;
         width: auto;
@@ -43,7 +48,6 @@ nav{
 @media only screen and (max-width: 990px){
     nav{
         height: auto;
-        background-color: $dark-purple;
 
         .navbar-brand{
             margin-left: 0rem;
