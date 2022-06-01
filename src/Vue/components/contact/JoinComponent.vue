@@ -64,6 +64,8 @@
                                     <button class="submit" type="submit" name="send">SUBSCRIBE</button>
                                 </div>
 
+                                <p>YOUR EMAIL IS SAFE WITH US, WE DON'T SPAM</p>
+
                             </form>
 
                             <div class="team">
