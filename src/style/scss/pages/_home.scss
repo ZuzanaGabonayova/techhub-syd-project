@@ -1,7 +1,7 @@
 #homepage{
     height: fit-content;
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: $primary-background-color;
     background-image: linear-gradient(to left, $primary-background-color, $dark-purple);
     background-size: cover;
@@ -12,6 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    .homepagee{
+        height: 83.5vh;
+    }
 
     .intro{     
         height: 100%!important;   
@@ -61,6 +65,11 @@
     .partners{
         height: 60px;
         display: flex;
+        /* position: absolute;
+        bottom: 0px; */
+        
+        margin-bottom: 0px;
+
         
         .partners-box{
             background-color: #ffffff33;

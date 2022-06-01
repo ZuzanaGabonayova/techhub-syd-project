@@ -3,6 +3,7 @@ body,
 #app{
     scroll-behavior: smooth;
     font-family: $body-font;
+    overflow-x: hidden;
 }
 
 #homeee{

@@ -1,0 +1,181 @@
+#idea{
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+    background-color: $primary-background-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .idea{
+        margin-left: 8rem;
+        margin-right: 8rem;
+
+        .idea-heading{
+            height: fit-content;
+            
+            .idea-heading-text{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+                h2{
+                    color: $light-neon-green;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                    font-size: 3.2rem;
+                }
+            }
+        }
+
+        .idea-paragraph{
+            height: fit-content;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            .idea-paragraph-text{
+                margin-top: 1rem;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                h3{
+                    color: $middle-purple;
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: $font-headings;    
+                }
+            }
+        }
+
+        .idea-connect{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            margin-top: 5rem;
+
+            .idea-connect-img-line{
+                color: $light-neon-green;
+
+                hr{
+                    width: 100%;
+                    background-color: $light-neon-green;
+                    height: 4px;
+                    border-radius: 2px;
+                }
+            }
+
+            img{
+                height: 120px;
+            }
+
+            .idea-connect-img1, .idea-connect-img2, .idea-connect-img3{
+                justify-content: center;
+                display: flex;
+                margin-top: -5rem;
+            }
+
+            .idea-connect-text1, .idea-connect-text2, .idea-connect-text3{
+                margin-top: 1rem;
+                p{
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    color: $primary-text-color;
+                    font-size: $font-paragraphs;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 990px){
+
+    #idea{
+
+        .idea{
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+
+            .idea-heading{
+
+                .idea-heading-text{
+
+                    h2{
+                        font-size: 2.3rem;
+                    }
+                }
+            }
+
+            .idea-paragraph{
+
+                .idea-paragraph-text{
+
+                    h3{
+                        font-size: $font-size-xl;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .idea-connect{
+                margin-top: 2rem;
+
+                .idea-connect-img-line{
+
+                    hr{
+                        display: none;
+                    }
+                }
+
+                img{
+                    height: 80px;
+                }
+
+                .idea-connect-img1{
+                    order: 1;
+                }
+
+                .idea-connect-img2{
+                    order: 3;
+                }
+
+                .idea-connect-img3{
+                    order: 5;
+                }
+
+                .idea-connect-text1{
+                    order: 2;
+                }
+
+                .idea-connect-text2{
+                    order: 4;
+                }
+
+                .idea-connect-text3{
+                    order: 6;
+                }
+
+                .idea-connect-text1, .idea-connect-text2, .idea-connect-text3{
+                    
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .idea-connect-img1, .idea-connect-img2, .idea-connect-img3{
+                    margin-top: 0rem;
+                }
+            }
+        }
+    }
+    
+}
