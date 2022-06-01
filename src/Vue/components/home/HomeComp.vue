@@ -17,12 +17,12 @@
                 </div>
 
                 <div class="col-sm-12 col-md-5 formular-img">
-                    <img src="../../../assets/images/illustrations/formular.png" alt="">
+                    <img src="../../../assets/images/illustrations/formular.png" alt="formular">
                 </div>
 
             </div>
 
-            <div class="row partners fixed-bottom">
+            <div class="row partners " >
 
                 <div class="partners-box ">
                     <div
