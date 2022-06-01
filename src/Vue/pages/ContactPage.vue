@@ -3,6 +3,7 @@
     <div id="contacttt">
         <Idea />
         <Join />
+        <Footer />
     </div>
 
 </template>
@@ -11,7 +12,7 @@
 <script>
 import Idea from '../components/contact/IdeaComponent.vue'
 import Join from '../components/contact/JoinComponent.vue'
-
+import Footer from '../components/FooterComponent.vue'
 
 
 export default {
@@ -19,7 +20,8 @@ export default {
 
     components:{
         Idea,
-        Join
+        Join,
+        Footer
     }
 }
 </script>
