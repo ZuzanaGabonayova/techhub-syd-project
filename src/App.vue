@@ -29,8 +29,13 @@ export default {
     HomePage,
     AboutPage,
     ReferencesPage,
+<<<<<<< HEAD
     EventsPage,
     ContactPage
+=======
+    /* EventsPage */
+    ContactPage,
+>>>>>>> e320b7526238b1c6e9ed4bbb2070e954dc4f1bac
   }
 }
 
