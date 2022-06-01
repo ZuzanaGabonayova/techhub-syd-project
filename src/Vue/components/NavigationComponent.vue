@@ -31,4 +31,3 @@
           <router-view/>
 
 </template>
-
