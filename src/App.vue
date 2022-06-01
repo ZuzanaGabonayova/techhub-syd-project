@@ -8,6 +8,9 @@
     <HomePage />
     <AboutPage />
     <ReferencesPage />
+    <ContactPage />
+
+    <!-- <EventsPage /> -->
   </div>
 
 </template>
@@ -17,13 +20,17 @@
 import HomePage from './Vue/pages/HomePage.vue'
 import AboutPage from './Vue/pages/AboutPage.vue'
 import ReferencesPage from './Vue/pages/ReferencesPage.vue'
+/* import EventsPage from './Vue/pages/EventsPage.vue' */
+import ContactPage from './Vue/pages/ContactPage.vue'
 
 export default {
   name: 'App',
   components: {
     HomePage,
     AboutPage,
-    ReferencesPage
+    ReferencesPage,
+    /* EventsPage */
+    ContactPage
   }
 }
 
