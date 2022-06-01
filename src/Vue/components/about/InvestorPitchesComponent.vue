@@ -2,7 +2,10 @@
     
     <section id="investor">
 
-        <div class="container-fluid pitches">
+        <div class="container-fluid pitches"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        >
 
             <div class="row investor-pitches">
 

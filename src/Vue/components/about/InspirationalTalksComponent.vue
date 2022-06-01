@@ -2,7 +2,10 @@
     
     <section id="inspirational">
 
-        <div class="container-fluid talks">
+        <div class="container-fluid talks"
+            data-aos="fade-up"
+            data-aos-duration="800"
+        >
 
             <div class="row insp-talks">
 
