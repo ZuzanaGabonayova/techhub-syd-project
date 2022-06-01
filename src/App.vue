@@ -30,7 +30,7 @@ export default {
     AboutPage,
     ReferencesPage,
     /* EventsPage */
-    ContactPage
+    ContactPage,
   }
 }
 
