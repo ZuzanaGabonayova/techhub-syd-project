@@ -33,9 +33,11 @@
         />
       </div>
 
-      <button type="submit" class="btn btn-success mt-3">
-        Create Event
-      </button>
+      <div class="create">
+        <button type="submit" class="btn btn-success mt-3">
+          Create Event
+        </button>
+      </div>
     </form>
 
   </div>
@@ -68,5 +70,35 @@ import { createEvent } from '@/firebase.js' // maybe this make error
 </script>
 
 <style lang="scss" scoped>
+
+.card{
+  background-color: transparent;
+}
+form{
+  color: #ffffff;
+  
+
+  input{
+    color: #B3A2FE;
+    background-color: transparent;
+    border-radius: 0.8rem;
+    border: 1px solid #B3A2FE;
+    width: 100%;
+  }
+
+  .create{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  button{
+    background-color: #00a800!important;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color-scheme: dark;
+}
 
 </style>
