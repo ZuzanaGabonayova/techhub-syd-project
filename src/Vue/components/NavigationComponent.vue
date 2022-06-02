@@ -21,13 +21,12 @@
                 <ul id="navbar-nav" class="navbar-nav ml-auto">
                     <li><a class="nav-item nav-link" href="#homepage">Home</a></li>
                     <li><a class="nav-item nav-link" href="#inspirational">About</a></li>
-                    <li><a class="nav-item nav-link" href="#events">Events</a></li>
+                    <li><a class="nav-item nav-link" href="#events-home">Events</a></li>
                     <li><a class="nav-item nav-link" href="#references">References</a></li>
-                    <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
-                    <li><a class="nav-item nav-link sign-up" href="#sign-up">Sign up</a></li>
+                    <li><a class="nav-item nav-link" href="#idea">Contact</a></li>
+                    <li><a class="nav-item nav-link sign-up" href="#join">Sign up</a></li>
                 </ul>
             </div>
           </nav>
-          <router-view/>
 
 </template>
