@@ -2,14 +2,15 @@
     
     <section id="inspirational">
 
-        <div class="container-fluid talks"
-            data-aos="fade-up"
-            data-aos-duration="800"
-        >
+        <div class="container-fluid talks" >
 
             <div class="row insp-talks">
 
-                <div class="col-sm-12 col-md-7 insp-text">
+                <div 
+                class="col-sm-12 col-md-7 insp-text"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                >
 
                     <h2>01</h2>
                     <h3>Inspirational talks</h3>
@@ -21,7 +22,11 @@
                 </div>
 
 
-                <div class="col-sm-12 col-md-5 insp-img">
+                <div 
+                class="col-sm-12 col-md-5 insp-img"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                >
                     <img src="../../../assets/images/illustrations/inspirational-talks.gif" alt="inspirational-talks">
                 </div>
 

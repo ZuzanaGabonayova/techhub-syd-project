@@ -6,7 +6,11 @@
 
             <div class="row idea-heading">
 
-                <div class="col-sm-12 col-md-12 idea-heading-text">
+                <div 
+                class="col-sm-12 col-md-12 idea-heading-text"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                >
 
                     <h2>Got an idea you want to make real?</h2>
 
@@ -14,7 +18,11 @@
 
             </div>
 
-            <div class="row idea-paragraph">
+            <div 
+            class="row idea-paragraph"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            >
 
                 <div class="col-sm-12 col-md-12 idea-paragraph-text">
 
@@ -25,7 +33,11 @@
             </div>
 
 
-            <div class="row idea-connect">
+            <div 
+            class="row idea-connect"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            >
 
                 <div class="col-md-12 idea-connect-img-line">
                     <hr>

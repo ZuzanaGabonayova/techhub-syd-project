@@ -6,7 +6,11 @@
 
             <div class="row">
 
-                <div class="col-sm-12 col-md-12 join-all">
+                <div 
+                class="col-sm-12 col-md-12 join-all"
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                >
 
                     <div class="row join-heading">
 

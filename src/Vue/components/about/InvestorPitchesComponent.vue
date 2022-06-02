@@ -2,20 +2,25 @@
     
     <section id="investor">
 
-        <div class="container-fluid pitches"
-        data-aos="fade-up"
-        data-aos-duration="800"
-        >
+        <div class="container-fluid pitches" >
 
             <div class="row investor-pitches">
 
                 
-                <div class="col-sm-12 col-md-6 pitch-img">
+                <div 
+                class="col-sm-12 col-md-6 pitch-img"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                >
                     <img src="../../../assets/images/illustrations/investor-pitches.gif" alt="investor-pitches">
                 </div>
 
 
-                <div class="col-sm-12 col-md-6 pitch-text">
+                <div 
+                class="col-sm-12 col-md-6 pitch-text"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                >
 
                     <h2>02</h2>
                     <h3>Investor pitches</h3>

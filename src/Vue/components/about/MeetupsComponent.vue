@@ -6,7 +6,11 @@
 
             <div class="row co-founder-meetups">
 
-                <div class="col-sm-12 col-md-7 meetups-text">
+                <div 
+                class="col-sm-12 col-md-7 meetups-text"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                >
 
                     <h2>03</h2>
                     <h3>Co-founder meetups</h3>
@@ -18,7 +22,11 @@
                 </div>
 
                                 
-                <div class="col-sm-12 col-md-5 meetups-img">
+                <div 
+                class="col-sm-12 col-md-5 meetups-img"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                >
                     <img src="../../../assets/images/illustrations/co-founder-meetups.gif" alt="co-founder-meetups">
                 </div>
 
