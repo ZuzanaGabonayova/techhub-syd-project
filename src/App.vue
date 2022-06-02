@@ -1,28 +1,10 @@
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/> -->
-  <div id="app">
-    <div class="description panel">
-    <HomePage />
-    </div>
-    <section class="panel red">
-      <AboutPage />
-    </section>
-    <section class="panel orange">
-      <ReferencesPage />
-    </section>
-    <section class="panel purple">
-      <ContactPage />
-    </section>
-    <section class="panel green">
-      <!-- <EventsPage /> -->
-    </section>
 
-    <!-- <EventsPage /> -->
-  </div>
+    <HomePage />
+    <AboutPage />
+    <EventsPage />
+    <ReferencesPage />
+    <ContactPage />
 
 </template>
 
@@ -31,20 +13,41 @@
 import HomePage from './Vue/pages/HomePage.vue'
 import AboutPage from './Vue/pages/AboutPage.vue'
 import ReferencesPage from './Vue/pages/ReferencesPage.vue'
-/* import EventsPage from './Vue/pages/EventsPage.vue' */
+import EventsPage from './Vue/pages/EventsPage.vue'
 import ContactPage from './Vue/pages/ContactPage.vue'
+
+
+
+import firebase from 'firebase' // firebase general stuff
+import {} from '@/firebase.js' // all from firebase.js file
+
+import { onBeforeMount} from 'vue' // lifecycle hook
+import { useRouter, useRoute } from 'vue-router' // able to use methods from vue-router (replace etc)
+
 
 export default {
   name: 'App',
   components: {
     HomePage,
     AboutPage,
+    EventsPage,
     ReferencesPage,
-
-    /* EventsPage, */
     ContactPage
+  },
+  setup() {
+    const router = useRouter(); // just declaring them
+    const route = useRoute();
 
-    /* EventsPage */
+    onBeforeMount(() => { // 
+      firebase.auth().onAuthStateChanged((user) => {
+        if (!user) { // dont have a user - not logged in)
+          router.replace('/login') // send them to this place
+        }
+        else if (route.path == '/login' || route.path == '/register') { // if logged in on this page, send us to home
+          router.replace('/'); // test: go to frontpage, should redirect
+        }
+      })
+    })
   }
 }
 
