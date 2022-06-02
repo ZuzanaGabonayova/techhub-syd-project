@@ -1,5 +1,5 @@
 <template>
-  <div class="card mt-4">
+  <div class="card mt-4" id="event-list">
     <table class="table m-0">
       <thead>
         <tr>
@@ -49,4 +49,13 @@ import { useLoadEvents, deleteEvent  } from '@/firebase.js'
 
 <style lang="scss" scoped>
 
+#event-list{
+  color: #ffffff;
+  padding-bottom: 2rem;
+  background-color: #000000;
+
+  table{
+    background-color: #B3A2FE;
+  }
+}
 </style>

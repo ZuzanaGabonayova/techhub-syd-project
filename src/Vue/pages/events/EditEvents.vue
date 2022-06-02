@@ -1,5 +1,5 @@
 <template>
-  <div class="card card-body mt-4">
+  <div class="card card-body " id="edit-events">
 
     <h3>Edit Events</h3>
     <form @submit.prevent="update">
@@ -34,9 +34,11 @@
         />
       </div>
 
-      <button type="submit" class="btn btn-primary  mt-3">
-        Update
-      </button>
+      <div class="update">
+        <button type="submit" class="btn btn-primary  mt-3">
+          Update
+        </button>
+      </div>
     </form>
 
   </div>
@@ -90,4 +92,42 @@ export default {
 
 <style lang="scss" scoped>
 
+#edit-events{
+    height: fit-content;
+    min-height: 90vh;
+    width: 100vw;
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    h3{
+      color: #00A800;
+      font-weight: bold;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    form{
+      color: #ffffff;
+
+      input{
+        color: #B3A2FE;
+        background-color: transparent;
+        border-radius: 0.8rem;
+        border: 1px solid #B3A2FE;
+        width: 100%;
+      }
+
+      .update{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+    }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color-scheme: dark;
+}
 </style>
