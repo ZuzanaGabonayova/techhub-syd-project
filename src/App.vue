@@ -1,40 +1,29 @@
 <template>
 
-    <HomePage />
-    <AboutPage />
-    <EventsPage />
-    <ReferencesPage />
-    <ContactPage />
+    <router-view/>
+    <FooterComponent />
 
 </template>
 
 
 <script>
-import HomePage from './Vue/pages/HomePage.vue'
-import AboutPage from './Vue/pages/AboutPage.vue'
-import ReferencesPage from './Vue/pages/ReferencesPage.vue'
-import EventsPage from './Vue/pages/EventsPage.vue'
-import ContactPage from './Vue/pages/ContactPage.vue'
+import FooterComponent from './Vue/components/FooterComponent.vue'
 
 
 
-import firebase from 'firebase' // firebase general stuff
-import {} from '@/firebase.js' // all from firebase.js file
+//import firebase from 'firebase' // firebase general stuff
+//import {} from '@/firebase.js' // all from firebase.js file
 
-import { onBeforeMount} from 'vue' // lifecycle hook
-import { useRouter, useRoute } from 'vue-router' // able to use methods from vue-router (replace etc)
+//import { onBeforeMount} from 'vue' // lifecycle hook
+//import { useRouter, useRoute } from 'vue-router' // able to use methods from vue-router (replace etc)
 
 
 export default {
   name: 'App',
   components: {
-    HomePage,
-    AboutPage,
-    EventsPage,
-    ReferencesPage,
-    ContactPage
+    FooterComponent
   },
-  setup() {
+/*   setup() {
     const router = useRouter(); // just declaring them
     const route = useRoute();
 
@@ -48,7 +37,7 @@ export default {
         }
       })
     })
-  }
+  } */
 }
 
 /* import { gsap } from "gsap";
