@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeEvents from './../pages/events/Home.vue'
+import HomeView from './../pages/HomeView.vue'
 
 // for editing (CRUD)
 import EditEvents from './../pages/events/EditEvents.vue'
 
 // For login stuff
-import LoginEvents from './../pages/events/Login.vue'
+import LoginEvents from '../pages/LoginPage.vue'
 
 // route guarding
 //import firebase from 'firebase'
@@ -14,8 +14,8 @@ import LoginEvents from './../pages/events/Login.vue'
 const routes = [
   {
     path: '/',
-    name: 'HomeEvents',
-    component: HomeEvents
+    name: 'HomeView',
+    component: HomeView
   },
   {
     path: '/editEvents/:id',  // id parameter to know which project we clicked
@@ -28,13 +28,14 @@ const routes = [
     component: LoginEvents
   },
 
+
   {
     path: '/admin',
     name: 'AdminEvents',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ './../pages/events/Admin.vue')
+    component: () => import(/* webpackChunkName: "about" */ './../pages/AdminPage.vue')
   }
 ]
 
